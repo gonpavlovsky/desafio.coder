@@ -1,0 +1,519 @@
+@charset "UTF-8";
+@import url(scss/mediaqueries.scss);
+/* fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Mukta:wght@300&family=Mulish&family=Oswald&display=swap");
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%; }
+
+header {
+  display: flex;
+  flex: 0 0 auto;
+  height: auto;
+  width: auto; }
+
+main {
+  flex: 1 0 auto; }
+
+/* Header */
+.navbar {
+  background-color: black;
+  font-family: Arial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+
+/* font-family: 'Cinzel Decorative', cursive;*/
+.dropdown {
+  padding-top: 18px;
+  padding-bottom: 10px;
+  font-family: 'Mulish', sans-serif;
+  width: auto;
+  position: relative;
+  left: 150px; }
+  .dropdown .dropbtn {
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; }
+
+.navbar a:hover .dropdown:hover .dropbtn {
+  background-color: rgba(56, 71, 57, 0.637);
+  height: auto; }
+
+.dropdown-content {
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(251, 255, 31, 0.2); }
+  .dropdown-content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .dropdown-content a:hover {
+    background-color: rgba(230, 230, 89, 0.808); }
+
+.logoWpp {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  background-color: rgba(58, 241, 241, 0.322);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%; }
+
+.imgWpp {
+  width: 150%;
+  height: 150%;
+  position: relative;
+  right: 15px;
+  bottom: 15px; }
+
+.animWpp {
+  background-color: rgba(58, 241, 241, 0.322);
+  color: black;
+  position: fixed;
+  right: 100px;
+  bottom: 15px;
+  padding: 3px;
+  text-align: center;
+  animation-name: animate__bounceInLeft;
+  animation-duration: 2s;
+  animation-delay: 3s; }
+
+.logoMail {
+  position: fixed;
+  left: 30px;
+  bottom: 15px;
+  background-color: rgba(23, 45, 87, 0.696);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%; }
+
+.imgMail {
+  width: 150%;
+  height: 150%;
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+  transform: scale(0.6); }
+
+.animMail {
+  background-color: rgba(23, 45, 87, 0.696);
+  color: white;
+  position: fixed;
+  left: 100px;
+  bottom: 15px;
+  padding: 3px;
+  text-align: center;
+  animation-name: animate__bounceInRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 3s; }
+
+/* Main */
+.mainContentInicio {
+  background-image: url(../imagenes/fotos-gonza/audion-en-vorterix.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-height: auto;
+  max-width: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+
+.mainContentInicio__Intro {
+  font-family: 'Mukta', sans-serif;
+  max-width: 400px;
+  max-height: 1300px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.445); }
+
+.mainCI__Intro--font-size-titulo {
+  font-size: 200%;
+  text-align: center;
+  color: #cece5b; }
+
+.mainCI__Intro--font-size-p {
+  font-size: 100%;
+  color: white; }
+
+.btn-verMas {
+  width: 180px;
+  height: 50px;
+  border: 2px solid #323232;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  border-radius: 5px; }
+
+.btn-verMas p {
+  color: #5f5f5f;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  transition: all 0.4s; }
+
+.btn-verMas:hover p {
+  color: #cece5b; }
+
+.btn-verMas span {
+  position: absolute;
+  transition: all 0.4s; }
+
+.btn-verMas span:nth-child(2), .btn span:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  background-color: #cece5b; }
+
+.btn-verMas span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); }
+
+.btn-verMas span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform: translateX(100%); }
+
+.btn-verMas span:nth-child(4), .btn span:nth-child(5) {
+  width: 2px;
+  height: 100%;
+  background-color: #cece5b; }
+
+.btn-verMas span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: translateY(-100%); }
+
+.btn-verMas span:nth-child(5) {
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%); }
+
+.btn-verMas:hover span {
+  transform: translate(0); }
+
+.boton-verMas:hover {
+  border: 0px; }
+
+/* 
+.boton-verMas {
+	margin-top: 10px;
+	background-color:rgba(0, 0, 0, 0.87);
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+.boton-verMas:hover {
+	background-color:  rgba(230, 230, 89, 0.808);
+	color: black;
+	border-radius: 5px;
+	border: none;
+}
+*/
+.carousel {
+  margin-top: 75px;
+  margin-bottom: 250px; }
+
+/* Estudios Audión */
+.mainContentEA {
+  background-image: url(../imagenes/fotos-estudio/collageEA.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  justify-content: center; }
+
+.servEA {
+  position: absolute;
+  right: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.445);
+  font-weight: 300; }
+  .servEA a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium; }
+  .servEA a:hover {
+    color: black;
+    font-size: large;
+    background-color: rgba(230, 230, 89, 0.808);
+    border-radius: 5px; }
+
+.linkEATienda {
+  font-size: medium;
+  color: white;
+  position: absolute;
+  left: 5px;
+  background-color: rgba(0, 0, 0, 0.445);
+  font-weight: 300; }
+  .linkEATienda a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium; }
+  .linkEATienda a:hover {
+    color: black;
+    font-size: large;
+    background-color: rgba(230, 230, 89, 0.808);
+    border-radius: 5px; }
+
+.EAppal {
+  background-color: rgba(0, 0, 0, 0.685);
+  max-width: 750px;
+  text-align: center;
+  margin-top: 50px;
+  color: white; }
+
+.contEA__titulos--color {
+  color: #cece5b; }
+
+.contEA__1parr--p {
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  margin-bottom: 10%; }
+
+.contEA__1parr:hover {
+  background-color: rgba(0, 0, 0, 0.726); }
+
+.contEA__2parr:hover {
+  background-color: rgba(0, 0, 0, 0.726); }
+
+.contEA__lista {
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  margin-bottom: 10%;
+  list-style-type: none; }
+
+.tablaEA {
+  margin-top: 40px; }
+
+.tablaEA:hover {
+  background-color: rgba(0, 0, 0, 0.726); }
+
+.tablaEA__capt {
+  color: white;
+  caption-side: top;
+  font-size: medium;
+  color: #cece5b; }
+
+.tablaEA__cont {
+  color: white;
+  align-self: center; }
+
+.imgtabla {
+  width: 100px;
+  height: 100px; }
+
+.section-title h2 {
+  color: #cece5b;
+  margin-bottom: 0; }
+
+.caja-servicio {
+  background-color: rgba(0, 0, 0, 0.445);
+  box-shadow: 0 10px 29px 0 rgba(255, 252, 69, 0.1);
+  border: 1px solid rgba(2, 2, 2, 0.212); }
+
+.caja-servicio:hover {
+  border: 1px solid #cece5b; }
+
+.servicios a {
+  color: #cece5b; }
+
+.servicios a:hover {
+  text-decoration: none;
+  font-size: larger; }
+
+.servicios-contenedor {
+  padding-bottom: 80px; }
+
+/* Gonzalo Villagra */
+.fondoGV {
+  background-image: url(../imagenes/fotos-gonza/foton-LN.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: auto;
+  margin: 0;
+  padding: 0; }
+
+.contGV {
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  display: block;
+  box-sizing: content-box;
+  max-width: 400px;
+  max-height: 1300px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.445);
+  margin-left: 5px; }
+
+.titulo-gv {
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  font-size: 200%;
+  margin: 0; }
+
+/* tienda y contrataciones */
+.secc-tienda {
+  background-image: radial-gradient(#333333, black);
+  background-repeat: no-repeat; }
+  .secc-tienda h2 {
+    color: #cece5b; }
+  .secc-tienda h4 {
+    color: #cece5b; }
+  .secc-tienda p {
+    color: white; }
+
+.container-msj-size {
+  font-size: medium; }
+
+/* 
+.grillaTyc {
+	display: grid;
+	grid-template-areas: 
+	"Servicios Servicios Servicios Servicios"  
+	"Grabaciones Overdubs Mix Mastering"
+	"Precio1 Precio2 Precio3 Precio4"
+	"Productos Productos Productos Productos"
+	"Indumentaria Discos Vinilos none"
+	"Precios1 Precios2 Precios3 none";
+	grid-template-columns: repeat(4, 200px);
+	grid-template-rows: 30px 200px 30px 30px 200px 30px;
+}
+.serviciostyc{
+	grid-area: Servicios;
+	border: 1px solid black;
+}
+.grabacionestyc {
+	grid-area: Grabaciones ;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.overdubstyc {
+	grid-area: Overdubs;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.mixtyc {
+	grid-area: Mix;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.masteringtyc {
+	grid-area: Mastering;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.precio1tyc {
+	grid-area: Precio1;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+.precio2tyc {
+	grid-area: Precio2;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+
+}
+.precio3tyc {
+	grid-area: Precio3;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+.precio4tyc {
+	grid-area: Precio4;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+.productostyc {
+	grid-area: Productos;
+	border: 1px solid black;
+}
+.indumentariatyc {
+	grid-area: Indumentaria;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.discostyc { 
+	grid-area: Discos;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.vinilostyc {
+	grid-area: Vinilos;
+	border: 1px solid black;
+	border-bottom: none;
+}
+.precios1tyc {
+	grid-area: Precios1;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+.precios2tyc {
+	grid-area: Precios2;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+.precios3tyc {
+	grid-area: Precios3;
+	border: 1px solid black;
+	border-top: none;
+	text-align: center;
+}
+*/
+/* Contacto */
+/* footer */
+footer {
+  background-image: linear-gradient(#4d4d4d, black);
+  color: white;
+  height: auto; }
+  footer h2 {
+    text-align: center;
+    margin-top: 0px; }
+
+.linkColor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .linkColor a {
+    text-decoration: none;
+    color: white;
+    margin-right: 60px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .linkColor img {
+    margin-bottom: 6px; }

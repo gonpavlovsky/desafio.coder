@@ -1,0 +1,338 @@
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        height: auto;
+        width: auto;
+    }
+    header {
+        height: auto;
+        width: auto;
+    }
+    .navbar {
+        align-items: center;
+        padding: 0;
+        height: 85px;
+        width: 100%;
+    }
+    .Logo {
+        transform: scale(0.5);
+        position: relative;
+        right: 40px;
+    }
+    
+    
+    .dropdown {
+        padding: 0;
+        left: 0;
+    }
+    .dropdown .dropbtn {
+        padding: 0;
+    
+    }
+    .dropbtn {
+        padding:0;   
+    }
+    .dropdown-content {
+       /* font-size: small;
+        transform: translateX(-23px); */
+        transform: translateX(-90px);
+    }
+    /*
+    .dropdown-content a{
+        padding: 10px 3px;
+    }*/
+    .logoWpp {
+        transform: scale(0.8);
+        right: 15px;
+    }
+    .logoMail {
+        transform: scale(0.8);
+        left: 15px;
+    }
+    .animWpp {
+        transform: scale(0.5);
+        right: 7px;
+    }
+    .animMail {
+        transform: scale(0.5);
+        left: 9px;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer h2{
+        transform: scale(0.8);
+        margin-bottom: 4px;
+        margin-top: 0px;
+    }
+    .linkColor  {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .linkColor a{
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }    
+    .linkColor img {
+        margin-bottom: 6px;
+    }
+    /* Main */
+    
+    .mainContentInicio {
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+    }
+    .mainContentInicio__Intro {
+        max-width: 300px;
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(0.9) translateY(-25px);
+    }
+    .boton-verMas {
+        margin-top: 5px;
+    }
+    .carousel {
+        transform: translateY(-45px);
+    
+    }
+    
+    
+    /* Estudios Audion */
+    .mainContentEA{
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+        max-width: 400px;
+    }
+    .servEA {
+        transform: scale(0.9) translateX(20px);
+    }
+    .linkEATienda {
+        transform: scale(0.9) translateX(-20px) translateY(40px);
+        width: auto;
+    }
+    .EAppal {
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(0.9);
+        margin-top: 5px; 
+        max-width: 400px;
+    }
+    .contEA__lista {
+        max-width: 380px;
+    }
+    .tablaEA {
+        transform: scale(0.6) translateX(-210px) translateY(-100px);
+        width: fit-content;
+    }
+    .tablaEA__capt {
+        font-size: 25px;
+    
+    }
+    .caja-servicio {
+        max-width: 100%;
+    }
+    .servicios-contenedor {
+        padding-bottom: 5px;
+        transform: translateY(-60px);
+    }
+        
+    /*
+    
+    */
+    /* Gonzalo */
+    .fondoGV {
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+    }
+    .contGV {
+        transform: scale(0.9)  translateY(-35px);
+    }
+    .titulo-gv {
+        text-align: center;
+    }
+    /* tienda */
+    
+       
+    /* Tablet Styles */
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
+        
+    }
+    body {
+        height: auto;
+        width: auto;
+    }
+    header {
+        height: auto;
+        width: auto;
+    }
+    .navbar {
+        align-items: center;
+        padding: 0;
+        height: 85px;
+        width: 100%;
+    }
+    .Logo {
+        transform: scale(0.5);
+        position: relative;
+        right: 40px;
+    }
+    
+    
+    .dropdown {
+        padding: 0;
+        left: 0;
+    }
+    .dropdown .dropbtn {
+        padding: 0;
+    
+    }
+    .dropbtn {
+        padding:0;   
+    }
+    .dropdown-content {
+       /* font-size: small;
+        transform: translateX(-23px); */
+        transform: translateX(-90px);
+    }
+    /*
+    .dropdown-content a{
+        padding: 10px 3px;
+    }*/
+    .logoWpp {
+        transform: scale(0.8);
+        right: 15px;
+    }
+    .logoMail {
+        transform: scale(0.8);
+        left: 15px;
+    }
+    .animWpp {
+        transform: scale(0.5);
+        right: 7px;
+    }
+    .animMail {
+        transform: scale(0.5);
+        left: 9px;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer h2{
+        transform: scale(0.8);
+        margin-bottom: 4px;
+        margin-top: 0px;
+    }
+    .linkColor  {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .linkColor a{
+        margin-right: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }    
+    .linkColor img {
+        margin-bottom: 6px;
+    }
+    /* Main */
+    
+    .mainContentInicio {
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+    }
+    .mainContentInicio__Intro {
+        max-width: 300px;
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(0.9) translateY(-25px);
+    }
+    .boton-verMas {
+        margin-top: 5px;
+    }
+    .carousel {
+        transform: translateY(-45px);
+    
+    }
+    
+    
+    /* Estudios Audion */
+    .mainContentEA{
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+        max-width: 400px;
+    }
+    .servEA {
+        transform: scale(0.9) translateX(20px);
+    }
+    .linkEATienda {
+        transform: scale(0.9) translateX(-20px) translateY(40px);
+        width: auto;
+    }
+    .EAppal {
+        background-color: rgba(0, 0, 0, 0);
+        transform: scale(0.9);
+        margin-top: 5px; 
+        max-width: 400px;
+    }
+    .contEA__lista {
+        max-width: 380px;
+    }
+    .tablaEA {
+        transform: scale(0.6) translateX(-210px) translateY(-100px);
+        width: fit-content;
+    }
+    .tablaEA__capt {
+        font-size: 25px;
+    
+    }
+    .caja-servicio {
+        max-width: 100%;
+    }
+    .servicios-contenedor {
+        padding-bottom: 5px;
+        transform: translateY(-60px);
+    }
+        
+    /*
+    
+    */
+    /* Gonzalo */
+    .fondoGV {
+        background-image: radial-gradient( rgb(51, 51, 51), black);
+        background-repeat:no-repeat;
+        height: 100%;
+    }
+    .contGV {
+        transform: scale(0.9)  translateY(-35px);
+    }
+    .titulo-gv {
+        text-align: center;
+    }
+    /* tienda */
+    
+       
+    /* Desktop Styles */
+    @media only screen and (min-width: 961px) {
+    
+    
+    /* inicio */
+    
+    
+    /* Estudios Audion */
+    
+    
+    /* Gonzalo */
+    
+    
+    /* Tienda */
+    
+    }

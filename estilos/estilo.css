@@ -69,7 +69,7 @@ main {
 .logoWpp {
   position: fixed;
   right: 30px;
-  bottom: 15px;
+  bottom: 35px;
   background-color: rgba(58, 241, 241, 0.322);
   width: 60px;
   height: 60px;
@@ -80,14 +80,14 @@ main {
   height: 150%;
   position: relative;
   right: 15px;
-  bottom: 15px; }
+  bottom: 17.5px; }
 
 .animWpp {
   background-color: rgba(58, 241, 241, 0.322);
   color: black;
   position: fixed;
   right: 100px;
-  bottom: 15px;
+  bottom: 35px;
   padding: 3px;
   text-align: center;
   animation-name: animate__bounceInLeft;
@@ -97,7 +97,7 @@ main {
 .logoMail {
   position: fixed;
   left: 30px;
-  bottom: 15px;
+  bottom: 35px;
   background-color: rgba(23, 45, 87, 0.696);
   width: 60px;
   height: 60px;
@@ -108,7 +108,7 @@ main {
   height: 150%;
   position: relative;
   right: 15px;
-  bottom: 15px;
+  bottom: 17.5px;
   transform: scale(0.6); }
 
 .animMail {
@@ -116,7 +116,7 @@ main {
   color: white;
   position: fixed;
   left: 100px;
-  bottom: 15px;
+  bottom: 35px;
   padding: 3px;
   text-align: center;
   animation-name: animate__bounceInRight;
@@ -234,7 +234,7 @@ main {
 	border: none;
 }
 */
-.carousel {
+.carrusel-inicio {
   margin-top: 75px;
   margin-bottom: 250px; }
 
@@ -378,6 +378,14 @@ main {
   font-family: 'Mukta', sans-serif;
   font-size: 200%;
   margin: 0; }
+
+.texto-carrusel1-gv h5 {
+  color: #cece5b;
+  background-color: rgba(0, 0, 0, 0.651); }
+
+.texto-carrusel1-gv p {
+  color: #cece5b;
+  background-color: rgba(0, 0, 0, 0.651); }
 
 /* tienda y contrataciones */
 .secc-tienda {

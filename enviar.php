@@ -42,7 +42,7 @@
 		
 
 	<main>
-		<center>
+		
             <?php 
 $myemail = 'gonzapav@gmail.com';
 $name = $_POST['nombre'];
@@ -51,35 +51,25 @@ $message = $_POST['mensaje'];
 
 $to = $myemail;
 $email_subject = "Nuevo mensaje: $subject";
-$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
+$email_body = "Has recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
 $headers = "From: $email";
 
 mail($to, $email_subject, $email_body, $headers);
 echo "El mensaje se ha enviado correctamente";
-?>
-            <fieldset>
-                <h1 align="Center">Conactanos</h1>
-                    <h2 align="center">Comunicate a: (mail)</h2>
-                
-                    <form align="center" method="post" action="enviar.php">
-                        
-                            <legend><u>Información Personal</u></legend>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-                            <br>
-                            <label for="email">Email:</label>
-                            <input type="text" name="email" placeholder="Ingrese su Email">
-                            <br>
-                            <label for="mensaje">Comentarios:</label>
-                            <br>
-                            <textarea name="mensaje"  cols="30" rows="10"></textarea>
-                            <br>
-                            <input type="reset"> 
-                            <input type="submit" value="ENVIAR"> 
+?>      
+        <center>
+            <h1>Conactanos</h1>
+                    <form method="post" action="enviar.php">
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                        <input type="email" name="email" placeholder="Ingrese su Email">
+                        <br>
+                        <textarea type="text" name="mensaje" placeholder="Mensaje"></textarea>
+                        <br>
+                        <input type="reset"> 
+                        <input type="submit" value="ENVIAR"> 
 
                         
-                    </form>
-            </fieldset>
+                    </form>        
         </center>
 		<div>
 			<a href="https://web.whatsapp.com/" class="logoWpp"> <img src="imagenes/fotos-cualq/logo.wpp.PNG" class="imgWpp">  </a>

@@ -388,15 +388,14 @@ main {
   background-color: rgba(0, 0, 0, 0.651); }
 
 /* tienda y contrataciones */
-.secc-tienda {
-  background-image: radial-gradient(#333333, black);
-  background-repeat: no-repeat; }
-  .secc-tienda h2 {
-    color: #cece5b; }
-  .secc-tienda h4 {
-    color: #cece5b; }
-  .secc-tienda p {
-    color: white; }
+.secc-tienda h2 {
+  color: #cece5b; }
+
+.secc-tienda h4 {
+  color: #cece5b; }
+
+.secc-tienda p {
+  color: white; }
 
 .container-msj-size {
   font-size: medium; }
@@ -502,6 +501,35 @@ main {
 }
 */
 /* Contacto */
+.secc-contacto {
+  background-image: radial-gradient(#333333, black);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  padding-bottom: 370px; }
+  .secc-contacto h1 {
+    padding-top: 100px; }
+  .secc-contacto input {
+    width: 300px;
+    height: 35px;
+    margin-top: 20px; }
+  .secc-contacto textarea {
+    width: 600px;
+    height: 70px;
+    margin-top: 5px; }
+  .secc-contacto input, .secc-contacto textarea {
+    background: transparent;
+    border: solid 2px #cece5b;
+    border-radius: 5px; }
+  .secc-contacto .botones {
+    color: white;
+    width: 100px; }
+  .secc-contacto .botones:hover {
+    color: black;
+    background-color: #cece5b; }
+  .secc-contacto ::-webkit-input-placeholder {
+    color: white; }
+
 /* footer */
 footer {
   background-image: linear-gradient(#4d4d4d, black);

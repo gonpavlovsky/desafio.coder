@@ -435,8 +435,7 @@ main {
 
 /* tienda y contrataciones */
 .secc-tienda {
-	background-image:radial-gradient( rgb(51, 51, 51), black);
-	background-repeat:no-repeat;
+	
 	h2 {
 		color: $amarillo;
 	}
@@ -551,7 +550,43 @@ main {
 }
 */
 /* Contacto */
+.secc-contacto {
+	background-image:radial-gradient( rgb(51, 51, 51), black);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	color: white;
+	padding-bottom: 370px;
+		h1 {
+			padding-top: 100px;
+		}
 
+		input {
+			width: 300px;
+			height: 35px;
+			margin-top: 20px;
+		}
+		textarea {
+			width: 600px;
+			height: 70px;
+			margin-top: 5px;
+		}
+		input, textarea {
+			background: transparent;
+			border: solid 2px $amarillo;
+			border-radius: 5px;
+		}
+		.botones {
+			color: white;
+			width: 100px;
+		}
+		.botones:hover {
+			color: black;
+			background-color: $amarillo;
+		}
+		::-webkit-input-placeholder {
+			color: white;
+		}
+}
 /* footer */
 footer {
 	background-image: linear-gradient(rgb(77, 77, 77), black);

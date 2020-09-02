@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	
-	<title> EA &#9119 Contacto</title>
+	<title> EA &#9119 Contacto - Mensaje envíado</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<link rel="stylesheet" href="estilos/estilo.css">
@@ -44,38 +44,54 @@
 	<main>
 		<fieldset>	
 			<h1 align="Center">Conactanos</h1>
-				<h2 align="center">Comunicate a: (mail)</h2>
-			<form align="center" method="post" action="enviar.php">
-				
-					<legend><u>Información Personal</u></legend>
-				
+                <h2 align="center">Comunicate a: (mail)</h2>
+            <center>
+            <?php 
+$myemail = 'gonzapav@gmail.com';
+$name = $_POST['nombre'];
+$email = $_POST['email'];
+$message = $_POST['mensaje'];
 
-					<label for="Nombre">Nombre:</label>
-					<input type="text" name="Nombre" placeholder="Ingrese su nombre">
-					<br>
+$to = $myemail;
+$email_subject = "Nuevo mensaje: $subject";
+$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
+$headers = "From: $email";
 
-					<label for="Apellido">Apellido</label>
-					<input type="text" name="Apellido" placeholder="Ingrese su apellido">
-					<br>
+mail($to, $email_subject, $email_body, $headers);
+echo "El mensaje se ha enviado correctamente";
+?>
+                <form align="center" method="post" action="enviar.php">
+                    
+                        <legend><u>Información Personal</u></legend>
+                    
 
-					<label for="Email">Email:</label>
-					<input type="text" name="Email" placeholder="Ingrese su Email">
-					<br>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" name="Nombre" placeholder="Ingrese su nombre">
+                        <br>
 
-					<label for="Telefomo">Teléfono:</label>
-					<input type="text" name="Telefono" placeholder="Ingrese su número de teléfono">
-					<br>
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" placeholder="Ingrese su apellido">
+                        <br>
 
-					<label for="Comentarios">Comentarios:</label>
-					<br>
-					<textarea name="Comentarios"  cols="30" rows="10"></textarea>
-					<br>
-					<input type="reset"> 
-					<input type="submit" value="ENVIAR"> 
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" placeholder="Ingrese su Email">
+                        <br>
 
-				
-			</form>
-		</fieldset>
+                        <label for="Telefomo">Teléfono:</label>
+                        <input type="text" name="Telefono" placeholder="Ingrese su número de teléfono">
+                        <br>
+
+                        <label for="Comentarios">Comentarios:</label>
+                        <br>
+                        <textarea name="Comentarios"  cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="reset"> 
+                        <input type="submit" value="ENVIAR"> 
+
+                    
+                </form>
+            </center>
+        </fieldset>
 		<div>
 			<a href="https://web.whatsapp.com/" class="logoWpp"> <img src="imagenes/fotos-cualq/logo.wpp.PNG" class="imgWpp">  </a>
 			<p class="animWpp animate_animated animate__bounceInLeft" > ¡Dejanos tu mensaje al Whatsapp! </p>

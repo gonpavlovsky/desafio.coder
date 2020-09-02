@@ -42,10 +42,7 @@
 		
 
 	<main>
-		<fieldset>	
-			<h1 align="Center">Conactanos</h1>
-                <h2 align="center">Comunicate a: (mail)</h2>
-            <center>
+		<center>
             <?php 
 $myemail = 'gonzapav@gmail.com';
 $name = $_POST['nombre'];
@@ -60,38 +57,30 @@ $headers = "From: $email";
 mail($to, $email_subject, $email_body, $headers);
 echo "El mensaje se ha enviado correctamente";
 ?>
-                <form align="center" method="post" action="enviar.php">
-                    
-                        <legend><u>Información Personal</u></legend>
-                    
+            <fieldset>
+                <h1 align="Center">Conactanos</h1>
+                    <h2 align="center">Comunicate a: (mail)</h2>
+                
+                    <form align="center" method="post" action="enviar.php">
+                        
+                            <legend><u>Información Personal</u></legend>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" placeholder="Ingrese su Email">
+                            <br>
+                            <label for="mensaje">Comentarios:</label>
+                            <br>
+                            <textarea name="mensaje"  cols="30" rows="10"></textarea>
+                            <br>
+                            <input type="reset"> 
+                            <input type="submit" value="ENVIAR"> 
 
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" name="Nombre" placeholder="Ingrese su nombre">
-                        <br>
-
-                        <label for="Apellido">Apellido</label>
-                        <input type="text" name="Apellido" placeholder="Ingrese su apellido">
-                        <br>
-
-                        <label for="Email">Email:</label>
-                        <input type="text" name="Email" placeholder="Ingrese su Email">
-                        <br>
-
-                        <label for="Telefomo">Teléfono:</label>
-                        <input type="text" name="Telefono" placeholder="Ingrese su número de teléfono">
-                        <br>
-
-                        <label for="Comentarios">Comentarios:</label>
-                        <br>
-                        <textarea name="Comentarios"  cols="30" rows="10"></textarea>
-                        <br>
-                        <input type="reset"> 
-                        <input type="submit" value="ENVIAR"> 
-
-                    
-                </form>
-            </center>
-        </fieldset>
+                        
+                    </form>
+            </fieldset>
+        </center>
 		<div>
 			<a href="https://web.whatsapp.com/" class="logoWpp"> <img src="imagenes/fotos-cualq/logo.wpp.PNG" class="imgWpp">  </a>
 			<p class="animWpp animate_animated animate__bounceInLeft" > ¡Dejanos tu mensaje al Whatsapp! </p>

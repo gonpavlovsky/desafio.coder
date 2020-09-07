@@ -17,6 +17,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -24,7 +25,7 @@
 	<header>
 		
 		<div class="navbar">
-			<a href="index.html" class="Logo col-4"><img src="imagenes/fotos-estudio/audion-estudio-1.png"></a>
+			<a href="index.html" class="Logo col-4"><img src="imagenes/fotos-estudio/audion-estudio-logo.png" width="175" height="74.8"></a>
 			
 			<div class="dropdown col-4"> 
 				<button class="dropbtn btn btn-secondary dropdown-toggle" id="dropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false""> &#9776 Menú</button>
@@ -35,38 +36,46 @@
 						<a class="dropdown-item" href="contacto.html">Contacto</a>
 						
 				</div>
+			</div>
+			<div>
+
 			</div>	
 		</div>
-	
+
 	</header>
 		
 	
 	
 	<main class="mainContentInicio">
-		<section class="Container mainContentInicio__Intro">    
-				<h2 class="mainCI__Intro--font-size-titulo">Introducción:</h2> 
-				<p class="mainCI__Intro--font-size-p">
+		<section class="Container mainContentInicio__Intro">
+			<div>
+				<img src="imagenes/fotos-cualq/cosa-amarilla-index.png">
+			</div>
+			<div>
+				<img src="imagenes/fotos-cualq/linea-amarilla-index.png">
+			</div>
+			<div class="mainContentInicio__Intro-texto">
+				<h2>Estudios Audión</h2>    
+				<h3>By Gonzalo Villagra</h3> 
+				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 				Cupiditate dolor minima magnam modi quos itaque possimus, 
 				consectetur, libero sunt harum fuga nesciunt voluptate velit 
 				aperiam tempora rem officiis quis! Assumenda.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Cupiditate dolor minima magnam modi quos itaque possimus, 
-				consectetur, libero sunt harum fuga nesciunt voluptate velit 
-				aperiam tempora rem officiis quis! Assumenda.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				Cupiditate dolor minima magnam modi quos itaque possimus, 
-				consectetur, libero sunt harum fuga nesciunt voluptate velit 
-				aperiam tempora rem officiis quis! Assumenda.
-				</p>
-				
+				</p>		
+			</div>		
 		</section>
-		
-		<!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger boton-verMas" href="index.html#dropdownMenuLink">VER MAS</a> -->
-		
-			
+
+		<section class="servicios-index">
+			<h2>Nuestros servicios</h2>
+			<div class="serv-img">
+				<div class="serv-img-ind"><img src="imagenes/fotos-cualq/serv-grupo57.png"> <h3>GRABACION </h3></div>
+				<div class="serv-img-ind"><img src="imagenes/fotos-cualq/serv-grupo58.png"><h3> OVERDUBS </h3></div>
+				<div class="serv-img-ind"><img src="imagenes/fotos-cualq/serv-grupo55.png"><h3> MIX </h3></div>
+				<div class="serv-img-ind"><img src="imagenes/fotos-cualq/serv-grupo56.png"> <h3> MASTERING </h3></div>
+			</div>
 			<div class="btn-verMas">
-				<a class="btn js-scroll-trigger  boton-verMas" href="index.html#dropdownMenuLink">
+				<a class="btn js-scroll-trigger  boton-verMas" href="estudiosAudion.html">
 					<p>VER MAS</p>
 					<span></span>
 					<span></span>
@@ -74,87 +83,46 @@
 					<span></span>
 				</a>
 			</div>
+		</section>
+		
+		<!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger boton-verMas" href="index.html#dropdownMenuLink">VER MAS</a> -->
+		
 			
+			
+		
 
 		
-		<div id="carouselExampleIndicators" class="carousel slide carrusel-inicio" data-ride="carousel">
-			<ol class="carousel-indicators">
-			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active"> <!--a las img se le puede poner como class w-100-->
-					<img class="d-block" src="imagenes/fotos-estudio/grabando-con.wal.jpg" alt="First slide">
-					<div class="carousel-caption d-none d-md-block">
-					<h5>TEXTO</h5>
-					<p>texto</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="d-block" src="imagenes/fotos-estudio/estudio-foto-ig.png" alt="Second slide">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>TEXTO</h5>
-						<p>texto</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="d-block" src="imagenes/fotos-gonza/gv-foto.jpg" alt="Third slide">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>TEXTO</h5>
-						<p>texto</p>
-					</div>
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Atrás</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Siguiente</span>
-			</a>
-		</div>
 		
-		<!--	
-		<section class="IntroGaleria">
-			<div class="Ifoto1 col-12 col-md-6 col-lg-4">
-				<img src="../imagenes/fotos-estudio/grabando-con.wal.jpg">
-				<p class="Ip1">Esta es una foto de prueba</p>
-			</div>
-			<div class="Ifoto2 col-12 col-md-6 col-lg-4">
-				<img src="../imagenes/fotos-estudio/estudio-foto-ig.png">
-				<p class="Ip2">Esta es una foto de prueba</p>
-			</div>
-			<div class="Ifoto3 col-12 col-md-6 col-lg-4">
-				<img src="../imagenes/fotos-gonza/gv-foto.jpg">
-				<p class="Ip3">Esta es una foto de prueba</p>
-			</div>
-		</section>
-		-->
-		<div>
-			<a href="https://web.whatsapp.com/" class="logoWpp"> <img src="imagenes/fotos-cualq/logo.wpp.PNG" class="imgWpp">  </a>
-			<p class="animWpp animate_animated animate__bounceInLeft" > ¡Dejanos tu mensaje al Whatsapp! </p>
-			<a href="mailto:cuenta@deemail.com" class="logoMail"  > <img src="imagenes/fotos-cualq/logo.mail.png" class="imgMail"></a>
-			<p class="animMail animate_animated animate__bounceInRight">  ¡Dejanos tu mensaje al correo! </p>
-		</div>
+		
+		
+		
+		<div class="share">
+            <ol>
+                <li><a href="#"><img src="imagenes/fotos-cualq/logo-ig.png" alt=""></a></li>
+                <li><a href="#"><img src="imagenes/fotos-cualq/logo-fb.png" alt=""></a></li>
+                <li><a href="#"><img src="imagenes/fotos-cualq/logo-wpp.png"></a></li>
+				<li><a href="#"><img src="imagenes/fotos-cualq/logo-mail.png"></a></li>
+            </ol>
+            <div class="toggle"></div>
+        </div>
 		
 </main>
 	
 
 <footer class="footer">
 	<nav>
-		<h2>Seguinos</h2>	
-			<div class="linkColor">	
-				<a href="https://www.facebook.com/gonzalo.villagra.90"> <img src="imagenes/fotos-cualq/attachment-1.png" width="15" height="15"> Gonzalo Villagra</a>
-						
-				<a href="https://instagram.com/gonzavillagra.ing?igshid=1d4ed1ofcd9hm"><img src="imagenes/fotos-cualq/ig-logo.png" alt="Instagram Logo" width="15" height="15"> @gonzavillagra.ing</a>
-						
-				<a href="https://instagram.com/estudiosaudion?igshid=16a8q8c0jykyq"><img src="imagenes/fotos-cualq/ig-logo.png" alt="Instagram Logo" width="15" height="15"> @estudiosaudion</a>
-			</div>	
+			<p class="ubic">San Fernando, Buenos Aires, Argentina</p>
+			<p class="minombre">Desarrollado por Gonzalo Pavlovsky - 2020</p>	
 	</nav>		
 </footer> 
+<script>
+	const toggle = document.querySelector('.toggle');
 
+	toggle.addEventListener('click',()=>{
+		const sharebtn = document.querySelector('.share');
+		sharebtn.classList.toggle('active');
+	})
+</script>
 </body>
 </html>
 

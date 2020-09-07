@@ -11,12 +11,17 @@ html {
 body {
 	margin: 0;
 	height: 100%;
+	width: 100%;
 }
 header {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	flex: 0 0 auto;
-	height: auto;
-	width: auto;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	top: 0;
 }
 main {
 	flex: 1 0 auto;
@@ -33,10 +38,14 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	.Logo {
+		padding-top: 5px;
+	}	
 }
 
 
 /* font-family: 'Cinzel Decorative', cursive;*/
+
 
 .dropdown { 
     padding-top: 18px;
@@ -84,38 +93,83 @@ main {
         }
 }        
 
-.logoWpp {
+
+
+.toggle{
+    width: 50px;
+    height: 50px;
+    background: $amarillo;
+    border-radius: 50%;
+    border: 2px solid $amarillo;
+    cursor: pointer;
 	position: fixed;
-    right: 30px;
-    bottom: 35px;
-    background-color: rgba(58, 241, 241, 0.322);
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-	
+	bottom: 75px;
+	right: 65px;
 }
-.imgWpp {
-	width: 150%;
-    height: 150%;
+.toggle::before{
+    content: '\f1e0';
+    width: 100%;
+    height: 100%;
+	position: absolute;
+    color: black;
+    font-family: fontAwesome;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+.share.active .toggle::before{
+    content: '\f00d';
+    font-size: 2rem;
+}
+.share{
     position: relative;
-    right: 15px;
-    bottom: 17.5px;
 }
-.animWpp {
-	background-color: rgba(58, 241, 241, 0.322);
-	color: black;
+.share ol{
 	position: fixed;
-	right: 100px;
-	bottom: 35px;
-	padding: 3px;
-	text-align: center;
-	animation-name: animate__bounceInLeft;
-	animation-duration: 2s;
-	animation-delay: 3s;
+	bottom: 75px;
+	right: 65px;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+}
+.share ol li{
+	position: fixed;
+	bottom: 75px;
+	right: 65px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .4s;
+}
+.share ol li a{
+    color: black;
+}
+.share.active ol li{
+    transform: translate(0);
+    transition: all 0.4s;
+}
+.share.active ol li:nth-child(1){
+    transition-delay: 0.1s;
+    transform: translateX(60px);
+}
+.share.active ol li:nth-child(2){
+    transition-delay: 0.2s;
+    transform: translateY(60px);
+}
+.share.active ol li:nth-child(3){
+    transition-delay: 0.3s;
+    transform: translateX(-60px);
+}
+.share.active ol li:nth-child(4){
+    transition-delay: 0.4s;
+    transform: translateY(-60px);
 }
 
-
-.logoMail {
+/* .logoMail {
 	position: fixed;
     left: 30px;
     bottom: 35px;
@@ -132,7 +186,7 @@ main {
 	bottom: 17.5px;
 	transform: scale(.6);
 }
-.animMail {
+ .animMail {
 	background-color: rgba(23, 45, 87, 0.696);
 	color:white;
 	position: fixed;
@@ -145,13 +199,13 @@ main {
 	animation-iteration-count: 1;
 	animation-delay: 3s;
 }
-
+*/
 
 
 /* Main */
 
 .mainContentInicio {
-	background-image: url(../imagenes/fotos-gonza/audion-en-vorterix.jpg);
+	background-image: url(../imagenes/fotos-gonza/audion-en-vorterix-osc.jpg);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -164,24 +218,51 @@ main {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+		.mainContentInicio__Intro {
+		display: flex;
+		flex-direction: row;
+		height: 1000px;
+		padding-top: 400px;
+			.mainContentInicio__Intro-texto {
+				display: flex;
+				flex-direction: column;
+				padding-left: 20px;
+				color: white;
+				h2 {
+					font-size: 100px;
+				}
+				h3 {
+					color: $amarillo;
+				}
+				p {
+					width: 700px;
+				}
+			}
+		}
+		.servicios-index {
+			background-color: rgb(46, 45, 45);
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			color: white;
+			align-items: center;
+			justify-content: center;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			.serv-img	{
+				display: flex;
+				flex-direction: row;
+				padding: 60px 60px;
+				.serv-img-ind {
+					display: flex;
+					flex-direction: column;
+					padding: 0 50px 0 50px;
+					text-align: center;
+				}
+			}
+		}
 }
-.mainContentInicio__Intro {
-	
-	font-family: 'Mukta', sans-serif;
-	max-width: 400px;
-	max-height: 1300px;
-	text-align: justify;
-	background-color: rgba(0, 0, 0, 0.445) ;
-}
-.mainCI__Intro--font-size-titulo{
-	font-size: 200%;
-	text-align: center;
-	color: $amarillo;
-}	
-.mainCI__Intro--font-size-p{
-	font-size: 100%;
-	color: white;
-}
+
 .btn-verMas{
     width: 180px;
     height: 50px;
@@ -194,10 +275,10 @@ main {
 	margin-top: 10px;
 	background-color:rgba(0, 0, 0, 0.87);
 	color: white;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 .btn-verMas p {
-    color: rgb(95, 95, 95);
+    color: rgb(184, 182, 182);
     letter-spacing: 0.2rem;
     font-size: 1.2rem;
     transition: all 0.4s;
@@ -589,32 +670,27 @@ main {
 }
 /* footer */
 footer {
-	background-image: linear-gradient(rgb(77, 77, 77), black);
+	background-color:  black;
 	color: white;
-    height: auto;
-        h2{
-            text-align: center;
-            margin-top: 0px;
-        }
-}
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+		
+		.ubic {
+			font-size: medium;
+			text-align: center;
+  			padding-top: 20px;
+		}
+		.minombre {
+			font-size: small;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 13px;
+		}
+}    
 
-.linkColor  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    a{
-        text-decoration: none;
-        color: white;
-        margin-right: 60px;
-        margin-left: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    img {
-        margin-bottom: 6px;
-    }
-}
+
 
 
 

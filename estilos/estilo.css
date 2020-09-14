@@ -41,7 +41,7 @@ main {
   font-family: 'Mulish', sans-serif;
   width: auto;
   position: relative;
-  left: 150px; }
+  text-align: end; }
   .dropdown .dropbtn {
     font-size: 24px;
     border: none;
@@ -58,7 +58,9 @@ main {
 
 .dropdown-content {
   background-color: black;
-  box-shadow: 0px 8px 16px 0px rgba(251, 255, 31, 0.2); }
+  box-shadow: 0px 8px 16px 0px rgba(251, 255, 31, 0.2);
+  right: 0;
+  left: auto; }
   .dropdown-content ul {
     margin: 0;
     padding: 0;
@@ -209,7 +211,7 @@ main {
       .mainContentInicio .mainContentInicio__Intro .mainContentInicio__Intro-texto p {
         width: 700px; }
   .mainContentInicio .servicios-index {
-    background-color: #2e2d2d;
+    background-color: #202020;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -218,15 +220,17 @@ main {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px; }
+    .mainContentInicio .servicios-index h2 {
+      font-size: 45px; }
     .mainContentInicio .servicios-index .serv-img {
-      display: flex;
-      flex-direction: row;
-      padding: 60px 60px; }
+      padding: 100px 100px; }
       .mainContentInicio .servicios-index .serv-img .serv-img-ind {
         display: flex;
         flex-direction: column;
         padding: 0 50px 0 50px;
         text-align: center; }
+        .mainContentInicio .servicios-index .serv-img .serv-img-ind img {
+          margin-bottom: 15px; }
 
 .btn-verMas {
   width: 180px;
@@ -291,138 +295,77 @@ main {
 .boton-verMas:hover {
   border: 0px; }
 
-/* 
-.boton-verMas {
-	margin-top: 10px;
-	background-color:rgba(0, 0, 0, 0.87);
-	color: white;
-	border-radius: 5px;
-	border: none;
-}
-.boton-verMas:hover {
-	background-color:  rgba(230, 230, 89, 0.808);
-	color: black;
-	border-radius: 5px;
-	border: none;
-}
-*/
-.carrusel-inicio {
-  margin-top: 75px;
-  margin-bottom: 250px; }
-
 /* Estudios Audión */
 .mainContentEA {
-  background-image: url(../imagenes/fotos-estudio/collageEA.jpeg);
+  background-color: #131313;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-attachment: fixed;
-  height: auto;
+  background-size: 100% 100%;
+  max-height: auto;
+  max-width: auto;
   display: flex;
-  justify-content: center; }
-
-.servEA {
-  position: absolute;
-  right: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.445);
-  font-weight: 300; }
-  .servEA a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: medium; }
-  .servEA a:hover {
-    color: black;
-    font-size: large;
-    background-color: rgba(230, 230, 89, 0.808);
-    border-radius: 5px; }
-
-.linkEATienda {
-  font-size: medium;
-  color: white;
-  position: absolute;
-  left: 5px;
-  background-color: rgba(0, 0, 0, 0.445);
-  font-weight: 300; }
-  .linkEATienda a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: medium; }
-  .linkEATienda a:hover {
-    color: black;
-    font-size: large;
-    background-color: rgba(230, 230, 89, 0.808);
-    border-radius: 5px; }
-
-.EAppal {
-  background-color: rgba(0, 0, 0, 0.685);
-  max-width: 750px;
-  text-align: center;
-  margin-top: 50px;
-  color: white; }
-
-.contEA__titulos--color {
-  color: #cece5b; }
-
-.contEA__1parr--p {
-  color: white;
-  font-family: 'Mukta', sans-serif;
-  margin-bottom: 10%; }
-
-.contEA__1parr:hover {
-  background-color: rgba(0, 0, 0, 0.726); }
-
-.contEA__2parr:hover {
-  background-color: rgba(0, 0, 0, 0.726); }
-
-.contEA__lista {
-  color: white;
-  font-family: 'Mukta', sans-serif;
-  margin-bottom: 10%;
-  list-style-type: none; }
-
-.tablaEA {
-  margin-top: 40px; }
-
-.tablaEA:hover {
-  background-color: rgba(0, 0, 0, 0.726); }
-
-.tablaEA__capt {
-  color: white;
-  caption-side: top;
-  font-size: medium;
-  color: #cece5b; }
-
-.tablaEA__cont {
-  color: white;
-  align-self: center; }
-
-.imgtabla {
-  width: 100px;
-  height: 100px; }
-
-.section-title h2 {
-  color: #cece5b;
-  margin-bottom: 0; }
-
-.caja-servicio {
-  background-color: rgba(0, 0, 0, 0.445);
-  box-shadow: 0 10px 29px 0 rgba(255, 252, 69, 0.1);
-  border: 1px solid rgba(2, 2, 2, 0.212); }
-
-.caja-servicio:hover {
-  border: 1px solid #cece5b; }
-
-.servicios a {
-  color: #cece5b; }
-
-.servicios a:hover {
-  text-decoration: none;
-  font-size: larger; }
-
-.servicios-contenedor {
-  padding-bottom: 80px; }
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+  .mainContentEA .mainContentEA__Intro {
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    padding-top: 400px; }
+    .mainContentEA .mainContentEA__Intro .nosotros {
+      transform: rotate(-90deg);
+      color: white;
+      position: absolute;
+      right: 1245px;
+      bottom: 500px; }
+    .mainContentEA .mainContentEA__Intro .mainContentEA-texto {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      margin-left: 30px; }
+      .mainContentEA .mainContentEA__Intro .mainContentEA-texto h2 {
+        font-size: 50px;
+        text-align: center; }
+      .mainContentEA .mainContentEA__Intro .mainContentEA-texto p {
+        width: 700px; }
+      .mainContentEA .mainContentEA__Intro .mainContentEA-texto .mainContentEA-texto2 {
+        margin-top: 90px; }
+  .mainContentEA .fotos-estudio {
+    border: 3.5px solid #cece5b;
+    border-radius: 20px;
+    align-content: center; }
+    .mainContentEA .fotos-estudio .img-estu {
+      transform: translateY(-50px) translateX(35px);
+      padding: 0;
+      margin-bottom: 25px; }
+      .mainContentEA .fotos-estudio .img-estu img {
+        border-radius: 20px; }
+  .mainContentEA .equipamiento {
+    background-image: url(../imagenes/fotos-cualq/equip-fondo-ea.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 170px; }
+    .mainContentEA .equipamiento h1 {
+      color: white;
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 60px; }
+    .mainContentEA .equipamiento .equipamiento-img-caja {
+      color: #cece5b;
+      text-align: center;
+      margin-left: 150px; }
+      .mainContentEA .equipamiento .equipamiento-img-caja .img-equip {
+        background-color: black;
+        border: 1px solid white;
+        padding: 0;
+        margin: 20px; }
+      .mainContentEA .equipamiento .equipamiento-img-caja .thumbnail:hover {
+        transform: scale(1); }
+    .mainContentEA .equipamiento .borrar {
+      opacity: 0; }
 
 /* Gonzalo Villagra */
 .fondoGV {

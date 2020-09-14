@@ -21,7 +21,8 @@ header {
 	height: 75px;
 	width: 100%;
 	position: fixed;
-	top: 0;
+	top: 0; 
+	
 }
 main {
 	flex: 1 0 auto;
@@ -32,7 +33,7 @@ main {
 /* Header */
 
 .navbar {
-    background-color: rgb(0, 0, 0);
+   background-color: rgb(0, 0, 0);
 	font-family: Arial;
 	display: flex;
 	align-items: center;
@@ -46,14 +47,13 @@ main {
 
 /* font-family: 'Cinzel Decorative', cursive;*/
 
-
 .dropdown { 
     padding-top: 18px;
 	padding-bottom: 10px;
 	font-family: 'Mulish', sans-serif;
 	width: auto;
 	position: relative;
-	left: 150px;
+	text-align: end;
         .dropbtn {
             font-size: 24px;
             border: none;
@@ -74,7 +74,9 @@ main {
 
 .dropdown-content {
     background-color:black;
-      box-shadow: 0px 8px 16px 0px rgba(251, 255, 31, 0.2);
+	box-shadow: 0px 8px 16px 0px rgba(251, 255, 31, 0.2);
+	right: 0;
+	left: auto;
         ul {
             margin: 0;
             padding: 0;
@@ -240,7 +242,7 @@ main {
 			}
 		}
 		.servicios-index {
-			background-color: rgb(46, 45, 45);
+			background-color: rgb(32, 32, 32);
 			width: 100%;
 			display: flex;
 			flex-direction: column;
@@ -249,15 +251,19 @@ main {
 			justify-content: center;
 			padding-top: 30px;
 			padding-bottom: 30px;
-			.serv-img	{
-				display: flex;
-				flex-direction: row;
-				padding: 60px 60px;
+			h2 {
+				font-size: 45px;
+			}
+			.serv-img {
+				padding:100px 100px;
 				.serv-img-ind {
 					display: flex;
 					flex-direction: column;
 					padding: 0 50px 0 50px;
 					text-align: center;
+					img {
+						margin-bottom: 15px;
+					}	
 				}
 			}
 		}
@@ -327,151 +333,98 @@ main {
 .boton-verMas:hover {
 	border: 0px;
 }
-/* 
-.boton-verMas {
-	margin-top: 10px;
-	background-color:rgba(0, 0, 0, 0.87);
-	color: white;
-	border-radius: 5px;
-	border: none;
-}
-.boton-verMas:hover {
-	background-color:  rgba(230, 230, 89, 0.808);
-	color: black;
-	border-radius: 5px;
-	border: none;
-}
-*/
-.carrusel-inicio {
-	margin-top: 75px;
-	margin-bottom: 250px;
-}
+
 /* Estudios Audión */
 .mainContentEA {
-	background-image: url(../imagenes/fotos-estudio/collageEA.jpeg);
+	background-color: rgb(19, 19, 19);
 	background-repeat:no-repeat;
-	background-size: 100% 100%;
 	background-attachment: fixed;
-	height: auto;
+	background-size: 100% 100%;
+	max-height: auto;
+	max-width: auto;
 	display: flex;
+	flex-direction: column;
+	align-content: center;
 	justify-content: center;
-}
-
-.servEA {
-	position: absolute;
-	right: 10px;
-	color: white;
-	background-color:  rgba(0, 0, 0, 0.445);
-    font-weight: 300;
-        a{
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            font-size: medium;
-        }
-        a:hover {
-            color: black;
-            font-size: large;
-            background-color: rgba(230, 230, 89, 0.808);
-            border-radius: 5px;
-        }
-}
-
-.linkEATienda{
-	font-size: medium;
-	color: white;
-	position: absolute;
-	left: 5px;
-	background-color:  rgba(0, 0, 0, 0.445);
-	font-weight: 300;
-    a {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-        font-size: medium;
-    }
-    a:hover{
-        color: black;
-        font-size: large;
-        background-color: rgba(230, 230, 89, 0.808);
-        border-radius: 5px;
-    }
-}
-
-
-.EAppal {
-	background-color:  rgba(0, 0, 0, 0.685) ;
-	max-width: 750px;
-	text-align: center;
-	margin-top: 50px;
-	color: white;
-}
-.contEA__titulos--color {
-	color: $amarillo;
-}
-.contEA__1parr--p {    
-	color: white;
-	font-family: 'Mukta', sans-serif;
-	margin-bottom: 10%;
-}
-.contEA__1parr:hover {
-	background-color: rgba(0, 0, 0, 0.726);
-}
-.contEA__2parr:hover {
-	background-color: rgba(0, 0, 0, 0.726);
-}
-.contEA__lista {    
-	color: white;
-	font-family: 'Mukta', sans-serif;
-	margin-bottom: 10%;
-	list-style-type: none;
-}
-.tablaEA {
-	margin-top: 40px;
-}
-.tablaEA:hover {
-	background-color: rgba(0, 0, 0, 0.726);
-}
-.tablaEA__capt {
-	color: white;
-	caption-side: top;
-	font-size: medium;
-	color: $amarillo;
-}
-.tablaEA__cont {
-	color: white;
-	align-self: center;
-}
-.imgtabla{
-	width: 100px;
-	height: 100px;
-}
-.section-title {
-    h2{
-        color:  $amarillo;
-        margin-bottom: 0;
-    }
-}
-.caja-servicio {
-	background-color: rgba(0, 0, 0, 0.445);
-	box-shadow: 0 10px 29px 0 rgba(255, 252, 69, 0.1);
-    border: 1px solid rgba(2, 2, 2, 0.212);
-}
-.caja-servicio:hover {
-	border: 1px solid $amarillo;
-}
-.servicios {
-    a{
-        color:  $amarillo;
-    }
-    a:hover {
-        text-decoration: none;
-        font-size: larger;
-    }
-}
-
-.servicios-contenedor { 
-	padding-bottom: 80px;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	.mainContentEA__Intro {
+		display: flex;
+		flex-direction: row;
+		height: 1000px;
+		padding-top: 400px;
+			.nosotros {
+				transform: rotate(-90deg);
+				color: white;
+				position: absolute;
+				right: 1245px;
+				bottom: 500px;
+			}
+			.mainContentEA-texto {
+				display: flex;
+				flex-direction: column;
+				color: white;
+				margin-left: 30px;
+				h2 {
+					font-size: 50px;
+					text-align: center;
+				}
+				p {
+					width: 700px;
+				}
+				.mainContentEA-texto2 {
+					margin-top: 90px;
+				}
+			}
+		}
+		.fotos-estudio {
+			border: 3.5px solid $amarillo;
+			border-radius: 20px;
+			align-content: center;
+			.img-estu {
+				transform: translateY(-50px) translateX(35px);
+				padding: 0;
+				margin-bottom: 25px;
+				img {
+					border-radius: 20px;
+				}
+			}
+		}
+		.equipamiento {
+			background-image: url(../imagenes/fotos-cualq/equip-fondo-ea.png);
+			background-repeat: no-repeat;
+			width: 100%;
+			margin-top: 170px;
+			
+			h1 {
+				color:white;
+				font-size: 60px;
+				text-align: center;
+				margin-bottom: 60px;
+			}
+			.equipamiento-img-caja {
+				color: $amarillo;
+				text-align: center;	
+				margin-left: 150px;
+				.img-equip {
+					background-color: black;
+					border: 1px solid white;
+					padding: 0;
+					margin: 20px;
+					
+				}
+				.thumbnail:hover {
+					transform: scale(1);
+					
+				}
+			}
+			
+			.borrar {
+				opacity: 0;
+			}
+		}
+		 	
 }
 
 /* Gonzalo Villagra */

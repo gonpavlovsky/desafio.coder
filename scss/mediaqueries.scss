@@ -43,44 +43,9 @@
     .dropdown-content a{
         padding: 10px 3px;
     }*/
-    .logoWpp {
-        transform: scale(0.8);
-        right: 15px;
-    }
-    .logoMail {
-        transform: scale(0.8);
-        left: 15px;
-    }
-    .animWpp {
-        transform: scale(0.5);
-        right: 7px;
-    }
-    .animMail {
-        transform: scale(0.5);
-        left: 9px;
-    }
-    footer {
-        height: fit-content;
-    }
-    footer h2{
-        transform: scale(0.8);
-        margin-bottom: 4px;
-        margin-top: 0px;
-    }
-    .linkColor  {
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .linkColor a{
-        margin-right: 5px;
-        margin-left: 5px;
-        text-align: center;
-    }    
-    .linkColor img {
-        margin-bottom: 6px;
-    }
+    
+   
+   
     /* Main */
     
     .mainContentInicio {
@@ -89,17 +54,10 @@
         height: 100%;
     }
     .mainContentInicio__Intro {
-        max-width: 300px;
-        background-color: rgba(0, 0, 0, 0);
         transform: scale(0.9) translateY(-25px);
     }
-    .boton-verMas {
-        margin-top: 5px;
-    }
-    .carousel {
-        transform: translateY(-45px);
     
-    }
+    
     
     
     /* Estudios Audion */

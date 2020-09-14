@@ -15,6 +15,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -346,25 +347,30 @@
 			</div>	
 			-->
 			
-			<div>
-				<a href="https://web.whatsapp.com/" class="logoWpp"> <img src="imagenes/fotos-cualq/logo.wpp.PNG" class="imgWpp">  </a>
-				<p class="animWpp animate_animated animate__bounceInLeft" > ¡Dejanos tu mensaje al Whatsapp! </p>
-				<a href="mailto:cuenta@deemail.com" class="logoMail"  > <img src="imagenes/fotos-cualq/logo.mail.png" class="imgMail"></a>
-				<p class="animMail animate_animated animate__bounceInRight">  ¡Dejanos tu mensaje al correo! </p>
-			</div>
+			<div class="share">
+        <ol>
+            <li><a href="#"><img src="imagenes/fotos-cualq/logo-ig.png" alt=""></a></li>
+            <li><a href="#"><img src="imagenes/fotos-cualq/logo-fb.png" alt=""></a></li>
+            <li><a href="#"><img src="imagenes/fotos-cualq/logo-wpp.png"></a></li>
+            <li><a href="#"><img src="imagenes/fotos-cualq/logo-mail.png"></a></li>
+        </ol>
+        <div class="toggle"></div>
+    </div>
 	</main>
 
 	<footer class="footer">
-		<nav>
-			<h2>Seguinos</h2>	
-				<div class="linkColor">	
-					<a href="https://www.facebook.com/gonzalo.villagra.90"> <img src="imagenes/fotos-cualq/attachment-1.png" alt="Facebook Logo" width="15" height="15"> Gonzalo Villagra</a>
-							
-					<a href="https://instagram.com/gonzavillagra.ing?igshid=1d4ed1ofcd9hm"><img src="imagenes/fotos-cualq/ig-logo.png" alt="Instagram Logo" width="15" height="15"> @gonzavillagra.ing</a>
-							
-					<a href="https://instagram.com/estudiosaudion?igshid=16a8q8c0jykyq"><img src="imagenes/fotos-cualq/ig-logo.png" alt="Instagram Logo" width="15" height="15"> @estudiosaudion</a>
-				</div>	
-		</nav>		
-	</footer> 
+    <nav>
+        <p class="ubic">San Fernando, Buenos Aires, Argentina</p>
+        <p class="minombre">Desarrollado por Gonzalo Pavlovsky - 2020</p>	
+    </nav>		
+  </footer> 
+  <script>
+    const toggle = document.querySelector('.toggle');
+  
+    toggle.addEventListener('click',()=>{
+      const sharebtn = document.querySelector('.share');
+      sharebtn.classList.toggle('active');
+    })
+  </script>
 </body>
 </html>

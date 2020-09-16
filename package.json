@@ -14,5 +14,13 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonpavlovsky/desafio.coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonpavlovsky/desafio.coder/issues"
+  },
+  "homepage": "https://github.com/gonpavlovsky/desafio.coder#readme",
   "description": ""
 }
